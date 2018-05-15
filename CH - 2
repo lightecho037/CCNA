@@ -3,9 +3,9 @@
 The term frame specifically refers to the header and trailer of a data-link protocol, 
 plus the data encapsulated inside that header and trailer.
 
-pg 99
+Encoding Scheme : Is the way on how 2 devices send data over a cable
 
-
+pg 101
 
 
 
