@@ -36,7 +36,7 @@ FCS       ||   4   || Determine if frame experienced transmission ERRORS
 SFD : Start Frame Delimiter
 FCS : Frane Check Sequence
 
-PG:106
+PG:106 Ethernet Addressing
 
 
 
