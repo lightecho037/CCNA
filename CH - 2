@@ -5,9 +5,38 @@ plus the data encapsulated inside that header and trailer.
 
 Encoding Scheme : Is the way on how 2 devices send data over a cable
 
-pg 102
+Crossover Cable: End points transmit on the same pin pair
+Straight-through Cable: End pints transmit on different pin pairs
+
+PC NICs     ||pins, 1, 2
+Routers     ||pins, 1, 2 
+Wireless    ||pins, 1, 2
+
+Hubs        ||pins, 3, 6
+Switches    ||pins, 3, 6
+
+Ethernet Data-Link Protocol
 
 
+||<<                     HEADER                   >>||____________||< TRAILER  >||
+|| Preamble || SFD || Destination || Source || Type || Data & Pad ||    FCS     ||
+
+
+_________ || Bytes ||
+Preamble  ||   7   || Synchronization
+SFD       ||   1   || Next byte begins with Destination MAC Add
+Dest MAC  ||   6   || Identifies recipient of this frame
+Sour MAC  ||   6   || Identifies sender of the frame
+Type      ||   2   || Defines type protocol ipv4 or ipv6
+Data & PAD||46-1500|| Holds data for Higher level || MTU 
+FCS       ||   4   || Determine if frame experienced transmission ERRORS
+
+
+
+SFD : Start Frame Delimiter
+FCS : Frane Check Sequence
+
+PG:106
 
 
 
