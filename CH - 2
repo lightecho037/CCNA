@@ -31,12 +31,10 @@ Type      ||   2   || Defines type protocol ipv4 or ipv6
 Data & PAD||46-1500|| Holds data for Higher level || MTU 
 FCS       ||   4   || Determine if frame experienced transmission ERRORS
 
-
-
 SFD : Start Frame Delimiter
 FCS : Frane Check Sequence
 
-PG:106 Ethernet Addressing
+PG:108 Identify Network Layer Protocol with the Ethernet Type Field
 
 
 
