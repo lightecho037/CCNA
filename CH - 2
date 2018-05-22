@@ -34,10 +34,17 @@ FCS       ||   4   || Determine if frame experienced transmission ERRORS
 SFD : Start Frame Delimiter
 FCS : Frane Check Sequence
 
-PG:108 Identify Network Layer Protocol with the Ethernet Type Field
+Identify Network Layer Protocol with the Ethernet Type Field
 
+  > ETHERNET FRAME 
+    
+    ||  Eth Header  || IPv4 || Eth Trailer  
+       Type = 0800             Also contains Error detection using FCS [Frame Check Sequence]   
 
-
+    ||  Eth Header  || IPv6 || Eth Trailer
+       Type = 86DD             Also contains Error detection using FCS [Frame Check Sequence] 
+       
+ 
 
 
 
